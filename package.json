@@ -1,0 +1,24 @@
+{
+  "name": "littledb",
+  "version": "1.0.0",
+  "description": "lowdb sample for 1.125",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "npm install"
+  },
+  "author": "jkosai",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "browserify": "^17.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.16.3",
+    "firebase": "^9.12.1",
+    "heroku": "^7.65.0",
+    "lowdb": "^1.0.0",
+    "mongodb": "^3.7.3"
+  }
+}

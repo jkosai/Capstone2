@@ -1,0 +1,13 @@
+.navbar-light {
+    background-color:rgb(209, 134, 159);
+}
+
+.nav-item--selected {
+    background: rgb(227, 123, 168);
+    color: #FFF;
+}
+
+#activeuser {
+    text-align: right;
+    color: black;
+}
