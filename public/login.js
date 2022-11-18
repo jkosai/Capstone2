@@ -40,7 +40,7 @@ function Login() {
           ctx.user.email = data.email;
           ctx.user.password = data.password;
           ctx.user.balance = data.balance;
-          let activeuser = document.getElementById('activeUser');
+          let activeuser = document.getElementById('activeuser');
           activeuser.innerText = ctx.user.email;
           setShow(false);
         }
