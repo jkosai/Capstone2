@@ -11,6 +11,8 @@ function NavBar(){
       user.password = null;
       user.balance = null;
       user.name = null;
+      let activeuser = document.getElementById('activeUser');
+      activeuser.innerText = "Log In";
 
   }
 
@@ -46,7 +48,7 @@ function NavBar(){
         </ul>
         </div>
           <a className="nav-link" data-toggle="tooltip" title="user email" href="#/login/" id="activeuser">
-              { user.email ? user.email : "Log In" } </a>
+             Log In </a>
           <a className="nav-link" data-toggle="tooltip" title="logout" id="logout" href="#/login/" onClick={handleLogout}>{user.email ? "Logout" : "Logout"}</a>
       </div>
       
