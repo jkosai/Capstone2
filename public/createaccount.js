@@ -55,6 +55,8 @@ function CreateAccount() {
             console.log(data);
             ctx.user.email = email;
             ctx.user.balance = 0;
+	    let activeuser = document.getElementById('activeuser');
+            activeuser.innerText = ctx.user.email;
        })();
        
        setShow(false);
