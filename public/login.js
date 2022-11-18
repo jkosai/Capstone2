@@ -90,6 +90,8 @@ function Login() {
             ctx.user.password = data.password;
             ctx.user.balance = data.balance;
             setShow(false);
+            let activeuser = document.getElementById('activeuser');
+            activeuser.innerText = ctx.user.email;
           }
         })();
           })
