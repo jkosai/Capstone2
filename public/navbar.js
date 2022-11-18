@@ -11,7 +11,7 @@ function NavBar(){
       user.password = null;
       user.balance = null;
       user.name = null;
-      let activeuser = document.getElementById('activeUser');
+      let activeuser = document.getElementById('activeuser');
       activeuser.innerText = "Log In";
 
   }
