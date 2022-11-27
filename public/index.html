@@ -36,39 +36,6 @@
       // Initialize Firebase
       const app = firebase.initializeApp(firebaseConfig);
 
-      firebase.auth().signOut();
-
-      firebase.auth().onAuthStateChanged((firebaseUser) => {
-        if (firebaseUser) {
-          console.log("Firebase Auth Logged-In: " + firebaseUser.email);
-
-          document.getElementById("loggedinuser").innerText =
-            firebaseUser.email;
-          document.getElementById("activeuser").innerText = firebaseUser.email;
-          document.getElementById("depositlink").className = "nav-item";
-          document.getElementById("withdrawlink").className = "nav-item";
-          document.getElementById("balancelink").className = "nav-item";
-          document.getElementById("logoutlink").className = "nav-item";
-          document.getElementById("transactionslink").className = "nav-item";
-          document.getElementById("alldatalink").className = "nav-item d-none";
-          document.getElementById("createaccountlink").className =
-            "nav-item d-none";
-          document.getElementById("loginlink").className = "nav-item d-none";
-          
-        } else {
-          console.log("Firebase Auth Logged-Out");
-          document.getElementById("depositlink").className = "nav-item d-none";
-          document.getElementById("withdrawlink").className = "nav-item d-none";
-          document.getElementById("balancelink").className = "nav-item d-none";
-          document.getElementById("logoutlink").className = "nav-item d-none";
-          document.getElementById("transactionslink").className = "nav-item d-none";
-          document.getElementById("alldatalink").className = "nav-item d-none";
-          document.getElementById("createaccountlink").className =
-            "nav-item nav-link me-auto";
-          document.getElementById("loginlink").className =
-            "nav-item nav-link me-auto";
-        }
-      });
     </script>
 
     <!-- load react -->
